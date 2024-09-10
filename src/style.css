@@ -1,0 +1,7 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.router-link-active {
+  color: red;
+}
