@@ -13,12 +13,25 @@
         >
         <router-link to="/dashboard/setting">Setting</router-link>
       </div>
+      <hr />
+      <h3 class="p-3">
+        {{ projectName }}
+      </h3>
+      <h3 class="p-3">Visit Count : {{ visitCount }}</h3>
     </div>
   </div>
 </template>
 
 <script>
-export default {};
+import { infoStore } from "../data/info";
+export default {
+  data() {
+    return {
+      projectName: infoStore.projectName,
+      visitCount: infoStore.visitCount,
+    };
+  },
+};
 </script>
 
 <style>
